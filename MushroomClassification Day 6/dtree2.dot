@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="gill-color <= 3.5\ngini = 0.5\nsamples = 6093\nvalue = [3141, 2952]"] ;
+1 [label="population <= 3.5\ngini = 0.281\nsamples = 2483\nvalue = [419, 2064]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="spore-print-color <= 1.5\ngini = 0.213\nsamples = 454\nvalue = [399, 55]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 35\nvalue = [0, 35]"] ;
+2 -> 3 ;
+4 [label="gini = 0.091\nsamples = 419\nvalue = [399, 20]"] ;
+2 -> 4 ;
+5 [label="stalk-root <= 2.0\ngini = 0.02\nsamples = 2029\nvalue = [20, 2009]"] ;
+1 -> 5 ;
+6 [label="gini = 0.007\nsamples = 2016\nvalue = [7, 2009]"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 13\nvalue = [13, 0]"] ;
+5 -> 7 ;
+8 [label="spore-print-color <= 1.5\ngini = 0.371\nsamples = 3610\nvalue = [2722, 888]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="odor <= 3.5\ngini = 0.206\nsamples = 557\nvalue = [65, 492]"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 492\nvalue = [0, 492]"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 65\nvalue = [65, 0]"] ;
+9 -> 11 ;
+12 [label="gill-size <= 0.5\ngini = 0.226\nsamples = 3053\nvalue = [2657, 396]"] ;
+8 -> 12 ;
+13 [label="gini = 0.052\nsamples = 2560\nvalue = [2492, 68]"] ;
+12 -> 13 ;
+14 [label="gini = 0.445\nsamples = 493\nvalue = [165, 328]"] ;
+12 -> 14 ;
+}

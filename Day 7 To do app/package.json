@@ -1,0 +1,16 @@
+{
+  "name": "do-it",
+  "version": "1.0.0",
+  "description": "To do web app withh node js, express and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milan Zinzuvadiya",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1"
+  }
+}

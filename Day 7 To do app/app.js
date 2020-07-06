@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 // express route
 app.get("/",function(req,res){
-    var tasksDB = ["100DaysOfCode","Study Research Paper","Develope Reinforcement Algorithm","Practice LInear Algebra","read Master Algorithm"];
+    var tasksDB = ["100DaysOfCode","Study Research Paper","Develope Reinforcement Algorithm","Sequence Prediction research","Book: Master Algorithm"];
     res.render(`index`,{tasks:tasksDB});
 });
 

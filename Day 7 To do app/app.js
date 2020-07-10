@@ -5,12 +5,11 @@ var app = express();
 app.set("view engine","ejs");
 app.use(express.static('public'));
 
-
+var tasksDB = ["100DaysOfCode","Study Research Paper","Develope Reinforcement Algorithm","Sequence Prediction research","Book: Master Algorithm"];
 
 // express route
 app.get("/",function(req,res){
-    var tasksDB = ["100DaysOfCode","Study Research Paper","Develope Reinforcement Algorithm","Sequence Prediction research","Book: Master Algorithm"];
-    res.render(`index`,{tasks:tasksDB});
+     res.render(`index`,{tasks:tasksDB});
 });
 
 
